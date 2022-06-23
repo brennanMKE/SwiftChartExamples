@@ -223,3 +223,40 @@ struct DataUsageData {
         
     ]
 }
+
+// Data for temperature range chart with high and low temps
+struct WeatherData {
+    struct Series: Identifiable {
+        /// The name of the city.
+        let city: String
+
+        /// High and low temp in F
+        let temperatures: [(day: Date, low: Int, high: Int)]
+
+        /// The identifier for the series.
+        var id: String { city }
+    }
+
+    static let cupertino: Series = .init(city: "Cupertino", temperatures: [
+        (day: date(year: 2022, month: 6, day: 6), low: 61, high: 87),
+        (day: date(year: 2022, month: 6, day: 7), low: 63, high: 85),
+        (day: date(year: 2022, month: 6, day: 8), low: 61, high: 84),
+        (day: date(year: 2022, month: 6, day: 9), low: 59, high: 75),
+        (day: date(year: 2022, month: 6, day: 10), low: 65, high: 82),
+        (day: date(year: 2022, month: 6, day: 11), low: 62, high: 78),
+        (day: date(year: 2022, month: 6, day: 12), low: 58, high: 69)
+    ])
+
+    static let sf: Series = .init(city: "San Francisco", temperatures: [
+        (day: date(year: 2022, month: 6, day: 6), low: 54, high: 63),
+        (day: date(year: 2022, month: 6, day: 7), low: 56, high: 62),
+        (day: date(year: 2022, month: 6, day: 8), low: 57, high: 68),
+        (day: date(year: 2022, month: 6, day: 9), low: 59, high: 73),
+        (day: date(year: 2022, month: 6, day: 10), low: 58, high: 66),
+        (day: date(year: 2022, month: 6, day: 11), low: 57, high: 63),
+        (day: date(year: 2022, month: 6, day: 12), low: 55, high: 67)
+    ])
+
+    /// Sales by location and weekday for the last 30 days.
+    static let last7Days: [Series] = [sf, cupertino]
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		266D8D732857F20A0002F263 /* TemperatureRangeChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266D8D722857F20A0002F263 /* TemperatureRangeChart.swift */; };
 		2E5763C628576B1B006C7C36 /* PyramidChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5763C528576B1B006C7C36 /* PyramidChart.swift */; };
 		88B3E5D02857493B00840CAA /* RangeSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B3E5CF2857493B00840CAA /* RangeSimple.swift */; };
 		934A95042857D035009E29F4 /* OneDimensionalBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A95032857D035009E29F4 /* OneDimensionalBar.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		262541172856A35B00A1E2EC /* Build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Build.xcconfig; sourceTree = "<group>"; };
+		266D8D722857F20A0002F263 /* TemperatureRangeChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureRangeChart.swift; sourceTree = "<group>"; };
 		2E5763C528576B1B006C7C36 /* PyramidChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PyramidChart.swift; sourceTree = "<group>"; };
 		88B3E5CF2857493B00840CAA /* RangeSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSimple.swift; sourceTree = "<group>"; };
 		934A95032857D035009E29F4 /* OneDimensionalBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneDimensionalBar.swift; sourceTree = "<group>"; };
@@ -99,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		266D8D712857F1F40002F263 /* Temperatures */ = {
+			isa = PBXGroup;
+			children = (
+				266D8D722857F20A0002F263 /* TemperatureRangeChart.swift */,
+			);
+			path = Temperatures;
+			sourceTree = "<group>";
+		};
 		2E5763C428576B0C006C7C36 /* Pyramid */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				88B3E5CE2857492F00840CAA /* Simple */,
+				266D8D712857F1F40002F263 /* Temperatures */,
 			);
 			path = RangeCharts;
 			sourceTree = "<group>";
@@ -421,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C26088252856A45800B09DDB /* Square.swift in Sources */,
+				266D8D732857F20A0002F263 /* TemperatureRangeChart.swift in Sources */,
 				934A95042857D035009E29F4 /* OneDimensionalBar.swift in Sources */,
 				C260882B2856B3C500B09DDB /* AreaSimple.swift in Sources */,
 				88B3E5D02857493B00840CAA /* RangeSimple.swift in Sources */,
